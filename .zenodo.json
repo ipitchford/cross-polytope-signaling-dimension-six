@@ -1,0 +1,29 @@
+{
+  "title": "The six-dimensional cross-polytope has signaling dimension three",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "Unrefereed computer-assisted candidate. The six-dimensional cross-polytope has signaling dimension three in the full affine model with free shared randomness. Complete support classification covers 133130 rooted representatives and retains 217 valid records. Rational simulator certificates and a separate orbit audit establish the finite computational obligations. The package additionally provides 49 full signed-cube symmetry classes, of which 28 require the nontrivial certificates. The lower bound, finite criterion, small-facet construction and generic enumeration framework are credited prior work. No formal verification, external peer review or unaffiliated reproduction is claimed. Original research content is CC0-1.0; original code is MIT. See the component-level licence map.",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.1.0-candidate",
+  "publication_date": "2026-10-11",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "signaling dimension",
+    "cross-polytope",
+    "classical simulation",
+    "rational certificates",
+    "balanced collections"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/cross-polytope-signaling-dimension-six",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

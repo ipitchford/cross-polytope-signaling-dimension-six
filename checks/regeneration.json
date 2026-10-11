@@ -1,0 +1,23 @@
+{
+  "boundary": "This checks reproducibility of enumeration bytes. The supplied-input verifier and orbit audit separately check exact classification, certificates and coverage.",
+  "files": {
+    "5": {
+      "byte_identical_to_supplied": true,
+      "records": 14303,
+      "sha256": "577bdda1746350f0644b793d2a1cd8d416f2f16c3a10a0180aaf6b812783c0a3",
+      "stderr": ""
+    },
+    "6": {
+      "byte_identical_to_supplied": true,
+      "records": 118827,
+      "sha256": "32a669ac020071965b16e55f299bfb50cbf58fa1c2d360e3dd2242589044f43c",
+      "stderr": ""
+    }
+  },
+  "genbg_executable": "/opt/homebrew/bin/genbg",
+  "manifest_nauty_version_claim": "2.9.3",
+  "mode": "optional-genbg-byte-regeneration",
+  "result": "both_graph_files_regenerated_byte_identically",
+  "schema": "cross-polytope-six-optional-regeneration-v1",
+  "verified_at": "2026-10-11T09:53:35.042174Z"
+}

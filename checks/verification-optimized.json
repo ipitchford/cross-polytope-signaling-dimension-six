@@ -1,0 +1,88 @@
+{
+  "classification": {
+    "certificate_methods": {
+      "proposition_2_1_exact_feasible": 130,
+      "seed_small_facet_construction": 87
+    },
+    "combined_exact_rejections": 132913,
+    "combined_graph_classes": 133130,
+    "combined_valid_measurements": 217,
+    "facet_subset_inequalities_checked": 12091,
+    "files": {
+      "5": {
+        "all_saved_records_matched_once": true,
+        "exact_rejections": 14264,
+        "graph_classes": 14303,
+        "methods": {
+          "proposition_2_1_exact_feasible": 15,
+          "seed_small_facet_construction": 24
+        },
+        "sha256": "577bdda1746350f0644b793d2a1cd8d416f2f16c3a10a0180aaf6b812783c0a3",
+        "valid_measurements": 39
+      },
+      "6": {
+        "all_saved_records_matched_once": true,
+        "exact_rejections": 118649,
+        "graph_classes": 118827,
+        "methods": {
+          "proposition_2_1_exact_feasible": 115,
+          "seed_small_facet_construction": 63
+        },
+        "sha256": "32a669ac020071965b16e55f299bfb50cbf58fa1c2d360e3dd2242589044f43c",
+        "valid_measurements": 178
+      }
+    },
+    "minimum_positive_slack": "1/12",
+    "zero_slack_inequalities": 7245
+  },
+  "full_signed_cube_catalogue": {
+    "classes": 49,
+    "difficult_classes": 28,
+    "rooted_records": 217,
+    "small_facet_classes": 21,
+    "support_size_6_classes": 12,
+    "support_size_7_classes": 37
+  },
+  "input_hashes": {
+    "full-signed-cube-catalogue.json": "5fe2c2c860dbd1b55b89f63caf845423b2cfa89bbec8d3585f6d78ff20321ed7",
+    "genbg-6-5.g6": "577bdda1746350f0644b793d2a1cd8d416f2f16c3a10a0180aaf6b812783c0a3",
+    "genbg-6-6.g6": "32a669ac020071965b16e55f299bfb50cbf58fa1c2d360e3dd2242589044f43c",
+    "manifest.json": "bee562da971e9bd8c25513407438158dadd3a88d423dee21ffc3674528e55036"
+  },
+  "mode": "supplied-input-exact-replay-without-graph-regeneration",
+  "preserved_original_attribution": {
+    "exact_verifier": {
+      "role": "original rational reclassification and certificate verification",
+      "sha256": "15431091e6f88adda304193fbc543d5174e7c8abcfa3e780c3b3fd4191c0f512"
+    },
+    "orbit_audit": {
+      "role": "original independent coordinate-permutation orbit coverage",
+      "sha256": "d7f06eee42f6aa46f53780e2685e9042462b368e84889c6aee8488e413255c1d"
+    },
+    "producer": {
+      "role": "original search and certificate production",
+      "sha256": "9a1a3481e8f0fe8ee475ec76b8f26cb8cf03a0eb0d33275fbb97b99143148626"
+    },
+    "research_workflow": "The supplied manuscript records OpenAI Codex as performing the searches, computation, verification and drafting under a human-directed workflow."
+  },
+  "result": "all_133130_supplied_classes_classified_217_certificates_verified_and_49_full_cube_classes_mapped",
+  "schema": "cross-polytope-six-supplied-input-verification-v1",
+  "semantic_negative_controls": [
+    "graph6-truncated",
+    "graph6-nonzero-padding",
+    "graph6-within-colour-edge",
+    "manifest-missing-key",
+    "manifest-extra-key",
+    "noncanonical-rational",
+    "certificate-mass-total",
+    "certificate-semantic-inequality"
+  ],
+  "strict_checks": {
+    "catalogue_transport_and_record_partition_checks": true,
+    "graph6_exact_length_ascii_padding_bipartite_and_support_checks": true,
+    "manifest_exact_keys_and_counters": true,
+    "saved_record_schema_and_exact_rational_checks": true
+  },
+  "trust_boundary": "This command verifies the supplied bytes and mathematics after graph enumeration. Run the preserved C++ orbit audit for independent supplied-list completeness, and run regenerate_inputs.py only when byte-for-byte genbg reproduction is desired.",
+  "verified_at": "2026-10-11T09:53:14.164260Z"
+}

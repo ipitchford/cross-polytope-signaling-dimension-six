@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please retain unrefereed candidate status and the computational assurance boundary."
+title: "The six-dimensional cross-polytope has signaling dimension three"
+authors:
+  - name: Anonymous
+version: 1.1.0-candidate
+doi: 10.5281/zenodo.23296390
+date-released: 2026-10-11
+license:
+  - CC0-1.0
+  - MIT
+repository-code: https://github.com/ipitchford/cross-polytope-signaling-dimension-six
+abstract: >-
+  Exact computer-assisted candidate showing that three classical symbols with
+  free shared randomness simulate every affine-measurement correlation of the
+  six-dimensional cross-polytope. Complete support coverage and rational
+  simulator certificates are checked separately. No formal verification,
+  external peer review or unaffiliated reproduction is claimed.

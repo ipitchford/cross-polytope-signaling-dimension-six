@@ -1,0 +1,84 @@
+Cross-polytope signaling-dimension-six public replay environment
+Package version: 1.1.0-candidate
+Observed date: 2026-10-11
+
+PRIMARY PUBLIC-PACKAGE REPLAY
+
+Operating system:
+  macOS 27.0.1 (build 26A434)
+  Darwin 27.0.0, arm64
+
+Python:
+  Python 3.14.7
+  The supplied-input verifier, catalogue builder/checker, optional regeneration
+  wrapper, and exact common-F transport simulator use only the Python standard library.
+  No Python package installation is required.
+
+C++:
+  Apple clang version 21.0.0 (clang-2100.3.34.2)
+  Target: arm64-apple-darwin27.0.0
+  Language mode used for the orbit audit: C++17
+
+Graph generator, optional route only:
+  executable observed at /opt/homebrew/bin/genbg
+  the frozen scientific manifest and clean-replay receipt identify nauty 2.9.3
+
+Route dependencies:
+  supplied-input exact verification:
+    Python 3 standard library only
+  independent common-F transport reconstruction:
+    Python 3 standard library only
+  orbit coverage audit:
+    C++17 compiler and the two shipped graph files
+  graph-list byte regeneration:
+    Python 3 standard library plus nauty genbg on PATH
+  manuscript build:
+    recorded separately by the final PDF/build QA receipt
+
+The economical scientific check does not require nauty. The supplied-input
+verifier checks the shipped graph files, exact classifications, certificates,
+strict schemas, semantic negative controls, and 49-class catalogue. The C++
+orbit audit establishes completeness of the supplied representative lists.
+Nauty is needed only to reproduce the graph-list bytes from the generation
+command.
+
+SUPPLIED-REVIEW REPRODUCTION ENVIRONMENT
+
+Operating system:
+  Linux x86-64
+
+Python:
+  Python 3.12.14
+
+C++:
+  GCC C++ 13.3.0
+
+Nauty:
+  genbg was unavailable in this environment
+
+The supplied review therefore ran the full supplied-input exact replay, the
+unchanged orbit audit, and a separately written exact common-F transport
+reconstruction, but did not regenerate the graph files. That limitation is
+not converted into a failed mathematical instance.
+
+FROZEN-SOURCE CLEAN REPLAY
+
+The private frozen-source clean receipt records:
+  macOS 27.0.1, arm64
+  Python 3.14.7
+  Apple clang 21.0.0
+  nauty genbg 2.9.3
+
+That clean extracted replay regenerated both graph files, ran exact
+classification/certificate verification, and ran the independent orbit audit.
+The public package preserves the scientific input bytes and supplies a clearer
+separation between verification and regeneration.
+
+LIMITS
+
+Version observations describe the recorded successful runs; they are not
+minimum-version guarantees. Local elapsed times, when recorded, are
+reproducibility observations rather than complexity or performance claims.
+Ordinary operating-system, interpreter, compiler, and hardware correctness
+remain in the computational trust boundary.
+

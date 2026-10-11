@@ -1,0 +1,320 @@
+{
+  "schemaVersion": "1.0",
+  "profile": "research-publication/v1",
+  "package": "cross-polytope-signaling-dimension-six",
+  "version": "1.1.0-candidate",
+  "status": "pre-freeze-candidate",
+  "targetSha256": null,
+  "publicationIdentifiers": {
+    "doi": "10.5281/zenodo.23296390",
+    "doiState": "reserved-not-published-or-read-back",
+    "zenodoDraftRecord": "23296390"
+  },
+  "assuranceBoundary": "Execution receipts prove recorded command execution and byte binding, not scientific adequacy, correctness, novelty, independent review, formal proof, provider publication, or canonical readback.",
+  "executionIsNotAdequacy": true,
+  "assessment": {
+    "kind": "AI-assisted internal and supplied academic review",
+    "assessedAt": "2026-10-11",
+    "scope": "Exact dimension-six theorem, finite evidence, bounded prior art, exposition, and candidate packaging.",
+    "claimCeiling": "Exact specialist computer-assisted theorem; prospective 2-star overall with credible 2-star/3-star boundary; no current 4-star basis.",
+    "limitations": [
+      "No human peer review.",
+      "No proof-assistant formalization.",
+      "No universal historical-priority guarantee.",
+      "Final package target hash, public-provider state, and canonical readback remain post-freeze obligations."
+    ]
+  },
+  "contributionMap": [
+    {
+      "claim": "The six-dimensional cross-polytope has signaling dimension three: sign.dim(diamond_6) = 3.",
+      "unit": "statement",
+      "paperLocation": "Abstract; Theorem 1.1; proof of Theorem 1.1",
+      "searches": [{
+        "date": "2026-10-11",
+        "query": "exact title; signaling/signalling dimension cross-polytope hyperoctahedron orthoplex six; arXiv 2610.05924",
+        "corpus": "arXiv, Crossref, general web, public GitHub and Codeberg"
+      }],
+      "closestPriorWork": "Bencze--Frenkel, arXiv:2610.05924v1, Theorems 2.2--2.3, gives only 3 <= sign.dim(diamond_6) <= 4; Kai--Dall'Arno computes exactly only through d=5.",
+      "verdict": "new-in-bounded-search"
+    },
+    {
+      "claim": "For positive integers d, sign.dim(diamond_d) = 3 exactly when 3 <= d <= 6.",
+      "unit": "statement",
+      "paperLocation": "Introduction; Corollary 1.2",
+      "searches": [{
+        "date": "2026-10-11",
+        "query": "cross-polytope signaling dimension values three four five six boundary",
+        "corpus": "Bencze--Frenkel v1, Kai--Dall'Arno 2024, cited foundational sources, web"
+      }],
+      "closestPriorWork": "Kai--Dall'Arno establishes the value three through d=5; Bencze--Frenkel supplies the lower bound excluding d>=7. The only new information in the endpoint is d=6.",
+      "verdict": "partially-known-cited"
+    },
+    {
+      "claim": "A complete exact finite proof covers all 133,130 basepoint-normalized representatives, retains 217 valid measurement records, and supplies exact three-state certificates for every retained record.",
+      "unit": "proof",
+      "paperLocation": "Sections 3--5; enumeration table; proof of Theorem 1.1",
+      "searches": [{
+        "date": "2026-10-11",
+        "query": "dimension six cross-polytope exact certificate enumeration sign.dim diamond_6",
+        "corpus": "arXiv, web, public code repositories, inspected signaling-dimension software"
+      }],
+      "closestPriorWork": "The finite criterion is Bencze--Frenkel Proposition 2.1 and earlier computations use symmetry and LP decomposition, but no inspected source contains this exhaustive d=6 proof or certificate corpus.",
+      "verdict": "new-in-bounded-search"
+    },
+    {
+      "claim": "Enumerate extremal measurements up to symmetry and solve the finite classical-simulation inequalities by linear programming or exact rational certificates.",
+      "unit": "method",
+      "paperLocation": "Introduction; Sections 3--4; Reproducibility and limitations",
+      "searches": [{
+        "date": "2026-10-11",
+        "query": "signaling dimension polytopic systems symmetry extremal measurement linear programming decomposition",
+        "corpus": "Kai--Dall'Arno Sections 4--6; Dall'Arno--Tosini--Buscemi; inspected public software"
+      }],
+      "closestPriorWork": "Dall'Arno--Tosini--Buscemi supplies the general extremal-measurement/LP framework; Kai--Dall'Arno supplies the prior symmetry-reduced exact algorithm.",
+      "verdict": "known-cited"
+    },
+    {
+      "claim": "The positive full-rank binary systems B w = 1 used after normalization are restricted minimal balanced collections, with the additional condition sum(w) < 2.",
+      "unit": "object",
+      "paperLocation": "Section 3, paragraph following the binary-reduction lemma",
+      "searches": [{
+        "date": "2026-10-11",
+        "query": "positive binary matrix B w = 1 minimal balanced collection enumeration six seven players",
+        "corpus": "Laplace Mermoud--Grabisch--Sudholter primary text and web"
+      }],
+      "closestPriorWork": "Laplace Mermoud--Grabisch--Sudholter (2023) defines and enumerates minimal balanced collections; the manuscript presents the connection as standard prior art.",
+      "verdict": "known-cited"
+    },
+    {
+      "claim": "The 217 rooted records merge into 49 full signed-coordinate classes, and the 130 difficult rooted records merge into 28 difficult full classes.",
+      "unit": "identification",
+      "paperLocation": "Abstract; enumeration table; Section 4 discussion after the worked certificate",
+      "searches": [{
+        "date": "2026-10-11",
+        "query": "minimal balanced collection catalogue six players full cube symmetry cross-polytope signaling",
+        "corpus": "Supplied review search, primary balanced-collection paper, public package catalogue audit"
+      }],
+      "closestPriorWork": "The balanced-collection literature reports related catalogues, but the external data were available only on request and were not obtained or compared. The current counts are a deterministic quotient of the independently verified 217-record corpus.",
+      "verdict": "new-in-bounded-search"
+    },
+    {
+      "claim": "Any subset receiving positive simulator mass must meet every coordinate-facet intersection.",
+      "unit": "identification",
+      "paperLocation": "Section 2, discussion after Proposition 2.1",
+      "searches": [{
+        "date": "2026-10-11",
+        "query": "Bencze Frenkel Proposition 2.1 facet full demand simulator subset transversal",
+        "corpus": "Bencze--Frenkel full v1 text and bounded extension assessment"
+      }],
+      "closestPriorWork": "This is an immediate specialization of Bencze--Frenkel Proposition 2.1 to an entire facet, not a claimed new simulation theorem.",
+      "verdict": "known-cited"
+    }
+  ],
+  "sourcesReadInFull": [
+    {
+      "citation": "Bencze and Frenkel, On the signaling dimension of the cross-polytope, arXiv:2610.05924v1 (2026)",
+      "usedFor": "Finite simulability criterion, small-facet construction, general bounds, and the unresolved 3--4 interval at d=6.",
+      "readWhat": "Complete six-page v1 text, including Proposition 2.1 and Theorems 2.2--2.3 with proofs and assumptions.",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://arxiv.org/html/2610.05924v1; SOURCES.md"
+    },
+    {
+      "citation": "Kai and Dall'Arno, The signaling dimension of two-dimensional and polytopic systems, QIC 24 (2024), 932--944; arXiv:2407.17725",
+      "usedFor": "Prior exact cross-polytope values through d=5 and the prior symmetry-reduced computational strategy.",
+      "readWhat": "Full text of Sections 4--6, Table 2, conclusion, and the assumptions governing the cross-polytope computation.",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://doi.org/10.26421/QIC24.11-12-3; SOURCES.md"
+    },
+    {
+      "citation": "Laplace Mermoud, Grabisch, and Sudholter, Minimal balanced collections and their application to core stability and other topics of game theory, Discrete Applied Mathematics 341 (2023), 60--81",
+      "usedFor": "Established minimal-balanced-collection object and enumeration methods.",
+      "readWhat": "Full text of Sections 2.3 and 4 and the balanced-collection/hypergraph correspondence, including definitions and enumeration scope.",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://doi.org/10.1016/j.dam.2023.07.025; arXiv:2507.05898v1; SOURCES.md"
+    },
+    {
+      "citation": "Dall'Arno, Tosini, and Buscemi, The signaling dimension in generalized probabilistic theories, QIC 24 (2024), 411--424",
+      "usedFor": "Definitions, extremal-measurement characterization, and generic linear-programming construction.",
+      "readWhat": "Publisher full text sections containing the mathematical definitions, primitive/extremal reduction, LP framework, and conclusion.",
+      "date": "2026-10-11",
+      "evidenceLocator": "https://doi.org/10.26421/QIC24.5-6-2; SOURCES.md"
+    }
+  ],
+  "limitationTriage": [
+    {
+      "limitation": "The theorem resolves d=6 only; the exact value at d=7 remains between four and five and no improved all-dimensional bound is proved.",
+      "closingQuestion": "Can a known bound, exact certificate computation, or new structural theorem decide d=7 or improve the general bounds?",
+      "triedOrSearched": "Inspected Bencze--Frenkel and Kai--Dall'Arno and tested obvious general-bound and containment shortcuts; none closes d=7.",
+      "estimatedCost": "Open research programme, likely substantially more than two hours and potentially large computation.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "No inspected theorem or bounded computation closes the next dimension; it is outside this frozen d=6 release.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The 28 difficult full-symmetry classes still use individual rational certificates rather than one explanatory structural construction.",
+      "closingQuestion": "Is there a common combinatorial or probabilistic construction satisfying every proper facet-subset inequality for all 28 classes?",
+      "triedOrSearched": "A bounded extension scout derived the transversal restriction and tested a natural two-block construction; the latter fails by the a+b-ab versus a+b deficit.",
+      "estimatedCost": "Unbounded research effort beyond two hours; no known closing theorem was found.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "The direct necessary restriction does not construct the common distribution, and no uniform law was obtained.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The external minimal-balanced-collection catalogue was not obtained or compared with the public 49-class catalogue.",
+      "closingQuestion": "Can the request-only external catalogue be acquired, licensed for the comparison, and mapped under the additional sum(w) < 2 restriction?",
+      "triedOrSearched": "The primary paper and catalogue description were inspected; the data were available only on request. No unsolicited outreach was authorized or performed.",
+      "estimatedCost": "Externally dependent and not schedulable within two hours; access and licence clarification may be required.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "External access was unavailable in scope, and the independent orbit proof already supplies the completeness required for this theorem.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The result is computer-assisted and has no proof-assistant formalization.",
+      "closingQuestion": "Can the finite criterion, orbit coverage, rational classification, and 217 certificates be formalized end to end?",
+      "triedOrSearched": "Exact standard-library replay, independent orbit accounting, semantic negative controls, and independent common-F max-flow reconstruction were completed; no formal proof development was supplied.",
+      "estimatedCost": "Substantial formalization project, well beyond two hours.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Formalization is valuable future work but is not needed to state the present computer-assisted trust boundary honestly.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "No human peer review or unaffiliated independent reproduction has occurred.",
+      "closingQuestion": "Will a qualified unaffiliated reader assess the proof and reproduce the frozen public package?",
+      "triedOrSearched": "The supplied AI-assisted review and multiple internal implementations were completed and labelled accurately; no unsolicited outreach was authorized.",
+      "estimatedCost": "Externally dependent review process, not a two-hour internal task.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Internal checking cannot manufacture external independence or human peer review.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The bounded literature search cannot exclude private, deleted, inaccessible, unindexed, contemporaneous, or differently phrased prior work.",
+      "closingQuestion": "Can universal historical priority be certified?",
+      "triedOrSearched": "Exact-title, identifier, terminology-variant, author, repository, code, arXiv, Crossref, and web searches were run; load-bearing primary sources and inspected software were read.",
+      "estimatedCost": "Not finitely closable; universal absence cannot be established by further bounded search.",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "The release therefore uses the qualified phrase new within the recorded bounded search.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The supplied review environment lacked genbg and could not regenerate the graph files.",
+      "closingQuestion": "Can a recorded environment with nauty regenerate both shipped graph lists byte for byte?",
+      "triedOrSearched": "The frozen-source clean replay and the public optional regeneration route used nauty genbg 2.9.3 and reproduced both files byte-identically.",
+      "estimatedCost": "Closed in the current release; minutes on the recorded environment.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The 217 retained records could be mistaken for inequivalent measurements under the full signed-coordinate symmetry group.",
+      "closingQuestion": "Can every rooted record be mapped exactly once to a canonical full-symmetry class with its certificate transported?",
+      "triedOrSearched": "Built and independently validated the 49-class catalogue, its 28 difficult classes, all record partitions, symmetry maps, weights, and certificate transports.",
+      "estimatedCost": "Closed in the current release.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The manuscript originally did not show operationally that one fixed distribution F simulates all twelve input columns.",
+      "closingQuestion": "Can one hard certificate be explained and all 2,604 input-column simulations be reconstructed independently?",
+      "triedOrSearched": "Added the record-5605 worked example and ran a fresh exact standard-library max-flow reconstruction in normal and optimized modes.",
+      "estimatedCost": "Closed in the current release.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "The theorem's model scope could be confused with restricted measurements, approximate simulation, three bits, or a three-dimensional simplex.",
+      "closingQuestion": "Can the exact quantifiers and operational meaning be stated consistently in the manuscript and machine records?",
+      "triedOrSearched": "The revised manuscript, README, STATUS, ASSURANCE, AI index, and structured claims state the full affine-effect model, exact simulation, free shared randomness, and three-state trit meaning.",
+      "estimatedCost": "Closed editorially in the current release.",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    }
+  ],
+  "extensionScout": {
+    "by": "AI-assisted publication-stage structural scout under human direction",
+    "date": "2026-10-11",
+    "proposals": [
+      "Find a uniform construction for the 28 difficult full-symmetry classes.",
+      "Derive a lossless structural prefilter directly from the finite criterion.",
+      "Compare the restricted supports with the external minimal-balanced catalogue.",
+      "Publish a full-symmetry catalogue and an operational common-F simulator check."
+    ],
+    "actions": [
+      "Tested a natural two-block construction and recorded its a+b-ab deficit; no uniform construction was obtained.",
+      "Proved and adopted the necessary facet-transversal restriction, explicitly as a direct consequence of the imported criterion and not a major new result.",
+      "Inspected the catalogue literature but did not obtain request-only external data or perform unauthorized outreach; no comparison is claimed.",
+      "Built and verified the public 49-class catalogue and reconstructed all 2,604 exact common-F input-column simulations."
+    ]
+  },
+  "unresolvedFatal": [],
+  "obligations": [
+    {
+      "id": "claim-scope-semantics",
+      "outcome": "adequate",
+      "scope": "Full affine effect model, exact simulation, all measurements via primitive reduction, free shared randomness.",
+      "rationale": "The manuscript, CLAIMS.json, and assurance statement preserve the original quantifiers and clarify that three states is a trit.",
+      "commandIds": [],
+      "evidence": ["paper.tex", "CLAIMS.json", "ASSURANCE.md"]
+    },
+    {
+      "id": "prior-art",
+      "outcome": "adequate-with-bounded-search-limit",
+      "scope": "Closest theorem, method, object, software, and terminology variants.",
+      "rationale": "Load-bearing primary sources were read; prior methods and balanced-collection objects are credited; universal priority is not claimed.",
+      "commandIds": [],
+      "evidence": ["SOURCES.md", "CITATION_AUDIT.md"]
+    },
+    {
+      "id": "replay",
+      "outcome": "adequate-on-frozen-scientific-inputs",
+      "scope": "Supplied-input exact verification, orbit coverage, independent transport reconstruction, full-symmetry catalogue, and optional byte regeneration.",
+      "rationale": "Normal and optimized supplied-input verification, exact common-F transport reconstruction, orbit coverage, catalogue verification, and optional byte regeneration passed with retained public receipts.",
+      "commandIds": ["verify-shipped-inputs", "orbit-audit", "independent-transport", "full-symmetry-catalogue", "optional-genbg-regeneration"],
+      "evidence": ["REPLAY_RECEIPT.md", "ENVIRONMENT.txt", "checks/replay-summary.json"]
+    },
+    {
+      "id": "negative-controls",
+      "outcome": "adequate-on-frozen-scientific-inputs",
+      "scope": "Structural and semantic failures in graph6 input, manifest schema, rational encoding, certificate normalization, and certificate inequalities.",
+      "rationale": "Eight semantic corruptions were rejected under normal and optimized public verification.",
+      "commandIds": ["public-negative-controls"],
+      "evidence": ["REPLAY_RECEIPT.md", "checks/verification-normal.json", "checks/verification-optimized.json"]
+    },
+    {
+      "id": "manifest-archive",
+      "outcome": "pending-final-package-freeze",
+      "scope": "Complete final file inventory, sizes, hashes, archive preflight, and provider parity.",
+      "rationale": "Scientific inputs and receipts are frozen, but the parent publication workflow must generate the complete package manifest after all metadata edits and verify public-provider bytes after publication.",
+      "commandIds": ["manifest-check", "archive-preflight", "provider-asset-parity"],
+      "evidence": []
+    },
+    {
+      "id": "manuscript",
+      "outcome": "adequate-on-final-doi-bearing-candidate",
+      "scope": "Review dispositions, exact build, text preflight, page-by-page visual inspection, accessible manuscript, and final hash binding.",
+      "rationale": "The revised seven-page DOI-bearing candidate built cleanly, passed raw-TeX preflight, had every page inspected, and records final TeX, PDF, Markdown, bibliography, and QA identities.",
+      "commandIds": ["pdf-build", "pdf-tex-preflight", "pdf-visual-qa"],
+      "evidence": ["paper.tex", "paper.pdf", "paper.md", "publication/qa.json", "REVIEW_RESPONSE.md"]
+    },
+    {
+      "id": "licence-provenance",
+      "outcome": "adequate-subject-to-final-manifest",
+      "scope": "Anonymous scholarly creator, maintainer/publisher distinction, frozen intake identities, CC0/MIT component map, and third-party exclusions.",
+      "rationale": "Public documentation makes the source-to-release transformation and rights boundary explicit.",
+      "commandIds": [],
+      "evidence": ["PROVENANCE.md", "LICENSE", "LICENSE-CODE", "LICENSES.md", "PUBLIC_DOMAIN.md"]
+    }
+  ]
+}

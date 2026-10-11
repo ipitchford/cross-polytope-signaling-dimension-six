@@ -1,0 +1,17 @@
+{
+  "allocation_stream_sha256": "b3c0ff9b7bafb08c144f16938b8c9ed9a8b01fe15f6019de4359334ad1fe56c0",
+  "common_distribution_fixed_across_twelve_inputs": true,
+  "exact_input_column_transports": 2604,
+  "measurement_count": 217,
+  "method": "Exact integer max-flow reconstruction with explicit supply, demand and support checks; no optimizer or floating-point arithmetic.",
+  "method_counts": {
+    "proposition_2_1_exact_feasible": 130,
+    "seed_small_facet_construction": 87
+  },
+  "provenance_boundary": "Fresh public implementation based on the operational method described by the internal proof audit; no private review code is included.",
+  "result": "all_2604_input_column_simulations_reconstructed_exactly",
+  "schema": "cross-polytope-six-exact-transport-reconstruction-v1",
+  "simulator_components_use_at_most_three_output_rows": true,
+  "source_manifest_sha256": "bee562da971e9bd8c25513407438158dadd3a88d423dee21ffc3674528e55036",
+  "verified_at": "2026-10-11T09:55:58.460544Z"
+}

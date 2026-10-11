@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "package": "cross-polytope-signaling-dimension-six",
+  "version": "1.1.0-candidate",
+  "status": "unrefereed-candidate",
+  "scholarly_creator": "Anonymous",
+  "publication_identifiers": {
+    "doi": "10.5281/zenodo.23296390",
+    "doi_state": "reserved-not-published-or-read-back"
+  },
+  "scope": {
+    "state_space": "The six-dimensional cross-polytope diamond_6 = {v in R^6 : ||v||_1 <= 1}.",
+    "effect_model": "Full affine effect model used by Bencze--Frenkel.",
+    "simulation": "Exact input-output simulation of every measurement transition matrix with free shared randomness.",
+    "classical_alphabet": "Three states means a trit, not three bits and not a three-dimensional simplex."
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "sign.dim(diamond_6) = 3.",
+      "classification": "main-theorem",
+      "status": "supported-by-exact-computer-assisted-proof",
+      "locator": "paper.tex, Theorem 1.1 and its proof",
+      "evidence": [
+        "data/manifest.json",
+        "data/genbg-6-5.g6",
+        "data/genbg-6-6.g6",
+        "code/verify-cross-polytope-six-original.py",
+        "code/verify-genbg-orbits.cpp",
+        "REPLAY_RECEIPT.md"
+      ],
+      "dependencies": [
+        "Bencze--Frenkel finite simulability criterion",
+        "Bencze--Frenkel lower bound",
+        "ordinary interpreter and compiler correctness",
+        "inspection of the mathematical encoding"
+      ],
+      "limits": [
+        "No proof-assistant formalization.",
+        "No human peer review.",
+        "Does not determine sign.dim(diamond_7), which remains between four and five."
+      ]
+    },
+    {
+      "id": "C2",
+      "statement": "For positive integers d, sign.dim(diamond_d) = 3 if and only if 3 <= d <= 6.",
+      "classification": "corollary",
+      "status": "supported",
+      "locator": "paper.tex, Corollary 1.2",
+      "evidence": [
+        "C1",
+        "prior exact values in dimensions three through five",
+        "the prior logarithmic lower bound for dimensions at least seven"
+      ],
+      "limits": [
+        "The only new mathematical information in this corollary is the dimension-six case."
+      ]
+    },
+    {
+      "id": "C3",
+      "statement": "The shipped representative lists cover every basepoint-normalized six- and seven-point support: 14,303 and 118,827 coordinate-permutation classes, whose orbit sizes cover 6,054,006 and 63,602,770 labelled supports.",
+      "classification": "exact-enumeration",
+      "status": "supported-by-independent-orbit-audit",
+      "locator": "paper.tex, binary-matrix reduction and enumeration table",
+      "evidence": [
+        "data/genbg-6-5.g6",
+        "data/genbg-6-6.g6",
+        "code/verify-genbg-orbits.cpp",
+        "REPLAY_RECEIPT.md"
+      ],
+      "limits": [
+        "These counts are rooted or basepoint-normalized records, not full cube-symmetry classes.",
+        "The generator proposes the lists; the orbit-size proof establishes coverage independently of generator completeness."
+      ]
+    },
+    {
+      "id": "C4",
+      "statement": "Exact rational filtering retains 39 six-point and 178 seven-point valid primitive-measurement records; all 217 admit exact three-state certificates, with 87 using the small-facet construction and 130 using saved general rational distributions.",
+      "classification": "exact-certificate",
+      "status": "supported-by-exact-replay",
+      "locator": "paper.tex, exact certificate computation",
+      "evidence": [
+        "data/manifest.json",
+        "code/verify-cross-polytope-six-original.py",
+        "code/verify_supplied.py",
+        "code/verify_transport_simulators.py",
+        "REPLAY_RECEIPT.md"
+      ],
+      "limits": [
+        "Zero valid measurement classes are infeasible; rejected candidate supports are not called infeasible measurement classes.",
+        "Producer floating-point screening is not trusted for the accepted classification.",
+        "A single saved subset distribution must work across all twelve extremal input states of each measurement."
+      ]
+    },
+    {
+      "id": "C5",
+      "statement": "Within the verified 217-record corpus, full signed-coordinate symmetry merges the records into 49 classes, and the 130 difficult records into 28 classes.",
+      "classification": "explanatory-catalogue",
+      "status": "supported-by-public-catalogue-verification",
+      "locator": "paper.tex, discussion of rooted versus full symmetry",
+      "evidence": [
+        "data/full-signed-cube-catalogue.json",
+        "code/verify_supplied.py",
+        "REPLAY_RECEIPT.md"
+      ],
+      "limits": [
+        "The catalogue organizes the already verified corpus and does not independently prove ambient completeness.",
+        "Counts split as 12 plus 37 full classes and 5 plus 23 difficult full classes."
+      ]
+    },
+    {
+      "id": "C6",
+      "statement": "Every subset receiving positive simulator mass must meet every coordinate-facet intersection of the measurement support.",
+      "classification": "necessary-restriction",
+      "status": "proved-as-direct-consequence-of-imported-criterion",
+      "locator": "ASSURANCE.md, Extension boundary",
+      "evidence": [
+        "Bencze--Frenkel Proposition 2.1",
+        "ASSURANCE.md"
+      ],
+      "limits": [
+        "This restriction is not claimed as historically new.",
+        "It is insufficient for feasibility and does not construct the required common distribution.",
+        "No speedup benchmark or uniform construction for the 28 difficult classes is claimed."
+      ]
+    },
+    {
+      "id": "C7",
+      "statement": "No inspected source proved the exact dimension-six value before this work.",
+      "classification": "bounded-prior-art-finding",
+      "status": "supported-within-recorded-search",
+      "locator": "SOURCES.md and CITATION_AUDIT.md",
+      "evidence": [
+        "SOURCES.md",
+        "CITATION_AUDIT.md"
+      ],
+      "limits": [
+        "Not a universal priority guarantee.",
+        "Does not exclude private, deleted, inaccessible, unindexed, contemporaneous, or differently phrased work.",
+        "An external minimal-balanced catalogue was not obtained or compared."
+      ]
+    }
+  ],
+  "assessment": {
+    "kind": "internal-prospective-judgement",
+    "recommendation": "minor-revisions",
+    "ratings": {
+      "originality": "2-star",
+      "significance": "2-star",
+      "rigour": "3-star",
+      "overall": "2-star"
+    },
+    "uncertainty": "Credible 2-star/3-star overall boundary; no present 4-star basis.",
+    "limits": [
+      "Not an official REF assessment.",
+      "Not a correctness probability.",
+      "Not human peer review."
+    ]
+  }
+}
+

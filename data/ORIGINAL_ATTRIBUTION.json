@@ -1,0 +1,25 @@
+{
+  "schema": "cross-polytope-six-original-computation-attribution-v1",
+  "research_workflow": {
+    "statement": "The supplied manuscript records that a human-directed research workflow specified the problem and constraints, and OpenAI Codex performed the recorded searches, computation, verification and drafting.",
+    "source": "The supplied paper.tex, Author contributions and AI disclosure sections."
+  },
+  "preserved_files": [
+    {
+      "path": "code/exhaustive-cross-polytope-six.py",
+      "role": "original producer and certificate search",
+      "sha256": "9a1a3481e8f0fe8ee475ec76b8f26cb8cf03a0eb0d33275fbb97b99143148626"
+    },
+    {
+      "path": "code/verify-cross-polytope-six-original.py",
+      "role": "original exact verifier with mandatory genbg regeneration",
+      "sha256": "15431091e6f88adda304193fbc543d5174e7c8abcfa3e780c3b3fd4191c0f512"
+    },
+    {
+      "path": "code/verify-genbg-orbits.cpp",
+      "role": "original independent coordinate-permutation orbit audit",
+      "sha256": "d7f06eee42f6aa46f53780e2685e9042462b368e84889c6aee8488e413255c1d"
+    }
+  ],
+  "public_derivative_boundary": "verification_core.py, verify_supplied.py, regenerate_inputs.py and build_full_cube_catalogue.py are fresh public implementations. The catalogue canonicalisation follows the method described in the internal independent-structure review, but no private review code is included."
+}

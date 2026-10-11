@@ -1,0 +1,55 @@
+{
+  "schema": "cross-polytope-six-public-replay-summary-v1",
+  "commands": [
+    "python3 code/verify_supplied.py --output checks/verification-normal.json",
+    "python3 -O code/verify_supplied.py --output checks/verification-optimized.json",
+    "python3 code/verify_transport_simulators.py --output checks/transport-normal.json",
+    "python3 -O code/verify_transport_simulators.py --output checks/transport-optimized.json",
+    "c++ -std=c++17 -O2 code/verify-genbg-orbits.cpp -o checks/verify-genbg-orbits",
+    "checks/verify-genbg-orbits data/genbg-6-5.g6 data/genbg-6-6.g6",
+    "python3 code/regenerate_inputs.py --output checks/regeneration.json"
+  ],
+  "dependencies": {
+    "supplied_input_verification": "Python 3 standard library only; observed Python 3.14.7",
+    "orbit_audit": "C++17; observed Apple clang 21.0.0",
+    "optional_regeneration": "nauty genbg on PATH; supplied manifest records nauty 2.9.3"
+  },
+  "counts": {
+    "supplied_graph_classes": 133130,
+    "exact_valid_measurements": 217,
+    "exact_rejections": 132913,
+    "certificate_methods": {
+      "seed_small_facet_construction": 87,
+      "proposition_2_1_exact_feasible": 130
+    },
+    "facet_subset_inequalities": 12091,
+    "exact_common_f_input_column_transports": 2604,
+    "full_signed_cube_classes": 49,
+    "difficult_full_signed_cube_classes": 28,
+    "semantic_negative_controls_rejected": 8,
+    "coordinate_permutations_in_orbit_audit": 720,
+    "labelled_supports_covered_right_size_5": 6054006,
+    "labelled_supports_covered_right_size_6": 63602770
+  },
+  "normal_optimized_payload_sha256_without_verified_at": "68cbdb8cf2987039dfeca54b08f6746383f85313b39df4edcfac3e8235b3502f",
+  "selected_file_sha256": {
+    "code/verification_core.py": "f13d91542b465833eaca9186a4b4b999da1ceb49918cf6bd341acd09bd7e1123",
+    "code/verify_supplied.py": "64947c7b4d9cb0cbad157f42f5f78e09d3fde19b2573319ccc43ba7fe31244f4",
+    "code/regenerate_inputs.py": "0ac5dd8139627a233c606acc8a5be1413648c506be80649c0717c4bd8d4c7abf",
+    "code/build_full_cube_catalogue.py": "22e750fe7502f425a0c800bb9084d5446e9df1ba121ffb7b7956f3cf8da44558",
+    "code/verify_transport_simulators.py": "78a2a09640ea2b85d6a41080259625bcf86abbd03fc3fa8d183743093aaedd8f",
+    "data/manifest.json": "bee562da971e9bd8c25513407438158dadd3a88d423dee21ffc3674528e55036",
+    "data/genbg-6-5.g6": "577bdda1746350f0644b793d2a1cd8d416f2f16c3a10a0180aaf6b812783c0a3",
+    "data/genbg-6-6.g6": "32a669ac020071965b16e55f299bfb50cbf58fa1c2d360e3dd2242589044f43c",
+    "data/full-signed-cube-catalogue.json": "5fe2c2c860dbd1b55b89f63caf845423b2cfa89bbec8d3585f6d78ff20321ed7",
+    "checks/verification-normal.json": "7d068ba13602990cad545c8b7ae57d70a31c8c09f9c424fc26bb0bd8d55a3c5d",
+    "checks/verification-optimized.json": "8670f66792ddf4a2d17d32c09e5ddf2d36e833ddc6e62131f8dd5a60799900b1",
+    "checks/transport-normal.json": "0b805a3327c0bfeacc9e64f53ded4a328e48aac2fe672cbea77208ade0b01154",
+    "checks/transport-optimized.json": "0f635673b010b43c7e628b68d4b634c916f7434cc7104060ec23ed6bb47fe4f5",
+    "checks/orbit-audit.json": "18b7df052a0eb5878de244f2dcfc9df16415f8b878b4402adac9155d7054fbdc",
+    "checks/regeneration.json": "b13fc08de818632e3188f515962db3d1c5ac68cbdeb34904cf74fba936f7d838"
+  },
+  "transport_allocation_stream_sha256": "b3c0ff9b7bafb08c144f16938b8c9ed9a8b01fe15f6019de4359334ad1fe56c0",
+  "result": "normal_and_optimized_supplied_input_and_transport_replays_match;_orbit_coverage_passes;_optional_regeneration_is_byte_identical",
+  "boundary": "The supplied-input command verifies the complete finite classification and certificates but not graph generation. The orbit audit establishes completeness of the supplied orbit representatives independently of genbg; optional regeneration checks genbg byte reproducibility. None is proof-assistant formalisation."
+}

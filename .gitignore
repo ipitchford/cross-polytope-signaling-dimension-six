@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.aux
+*.log
+!checks/orbit-compile.log
+*.out
+*.toc
+checks/verify-genbg-orbits
+.DS_Store

@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "1.0",
+  "package": "cross-polytope-signaling-dimension-six",
+  "version": "1.1.0-candidate",
+  "scope": "Every shipped payload except MANIFEST.json and SHA256SUMS.",
+  "files": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "size_bytes": 3914,
+      "sha256": "f913e2f9ff97edab1acec045811b0d111f54308e776d0fc2d370d6debc9005f6"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 106,
+      "sha256": "ed22273d8b711882dd98d71e169db5b35c94525b74857d8215d659dc3bbd447e"
+    },
+    {
+      "path": ".zenodo.json",
+      "size_bytes": 1482,
+      "sha256": "d1a19900b17d79f05e8d1e0418a4531644162e828eeeb52810561f346d322300"
+    },
+    {
+      "path": "AI_INDEX.md",
+      "size_bytes": 5605,
+      "sha256": "575e985f5361d9e954f41313ea81eb66209211e94eef95c77a450dc2a990942d"
+    },
+    {
+      "path": "ASSURANCE.md",
+      "size_bytes": 5719,
+      "sha256": "fd96395db4efddc82415447b0ce63e637dc247a7cd7a25aba4c2380e1256f72d"
+    },
+    {
+      "path": "CITATION.cff",
+      "size_bytes": 791,
+      "sha256": "64185891b020a365c282925cc00cd26585bccb6b58f57ef8e074f98c72fdefa5"
+    },
+    {
+      "path": "CITATION_AUDIT.md",
+      "size_bytes": 3925,
+      "sha256": "38c745b98eb18d7f24b44eecdf8d59d35d0a0dcc6d869ab30819d8e84bb3327d"
+    },
+    {
+      "path": "CLAIMS.json",
+      "size_bytes": 6684,
+      "sha256": "eb3bd8f7107d5a0081b9786e3c8e15a288581dc3764688d21a8999d487222a52"
+    },
+    {
+      "path": "ENVIRONMENT.txt",
+      "size_bytes": 2808,
+      "sha256": "866d51e1297f15459b7b2bfe52b4766a9917d78bc0aeedd84f86fd76018b8c2d"
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 1780,
+      "sha256": "7b19269d8c6cb28ab5605d0560264f788dd3392eb45b9ad5bbb20e86c569041b"
+    },
+    {
+      "path": "LICENSE-CODE",
+      "size_bytes": 1097,
+      "sha256": "d76a94f0c001e83c6ebde9406e1012bf282995b851580558fd482b7b2f96416e"
+    },
+    {
+      "path": "LICENSES.md",
+      "size_bytes": 2136,
+      "sha256": "566e37c852060aea8e3e3e6130a256bd6d5cdf67547f78c6088f6fb83a0757ad"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "size_bytes": 4319,
+      "sha256": "936b7f2f58d11c6f534088ed5284232a5c8c3287c6a65f5d5747db31c1855b66"
+    },
+    {
+      "path": "PUBLIC_DOMAIN.md",
+      "size_bytes": 1333,
+      "sha256": "e84f84384b444e6d69c335a87e61ffbe795ad59a2349eaeb27ef51d7969e703a"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5403,
+      "sha256": "05ad9474a659af9591c777757d07fd0bff6005d3f108bc2301220add7f94c7cd"
+    },
+    {
+      "path": "REPLAY_RECEIPT.md",
+      "size_bytes": 9686,
+      "sha256": "9d10a37182a7b030d3cc51a019c4bb2bba3be0d751007fbfc9989909bdfc31fa"
+    },
+    {
+      "path": "RESEARCH_GATES.json",
+      "size_bytes": 21053,
+      "sha256": "0004fe525073aee7fa2a655b40b7c150d37f4d4532081ae9fa66cc8c1f3377f4"
+    },
+    {
+      "path": "REVIEW_RESPONSE.md",
+      "size_bytes": 8033,
+      "sha256": "43f6b5f78b46c3bf8c848f6ece01780ea294ee33dbf4ba1ceeea68e6c12b8257"
+    },
+    {
+      "path": "SOURCES.md",
+      "size_bytes": 5740,
+      "sha256": "8a65ab62257774816b7084b24e0418bee91d488f660d4e4af5c70753649a5253"
+    },
+    {
+      "path": "STATUS.md",
+      "size_bytes": 4620,
+      "sha256": "5bf969a6439b646b9e57767e77f438b79c6cd2924b98ee7a628b27076edca905"
+    },
+    {
+      "path": "bibliography.bib",
+      "size_bytes": 3156,
+      "sha256": "7ba2881e2f93d5a93de0b98ace14f173452b46b6344ad2ca5ce0d4fbb8665a08"
+    },
+    {
+      "path": "checks/FILE_SHA256SUMS",
+      "size_bytes": 2552,
+      "sha256": "40602ff72377787b92c0d20749f13de2d63466b32662cdc2106d28bd6d44e0e5"
+    },
+    {
+      "path": "checks/check_manifest.py",
+      "size_bytes": 7696,
+      "sha256": "9792460471a06b52b9fe25423f79917460364a9767fbb31e31f499dbf82b7d01"
+    },
+    {
+      "path": "checks/check_replay_gate.py",
+      "size_bytes": 9462,
+      "sha256": "0123ec4228d931dfeaa14f5e6c4455057f0cc5ec39723774dbae0c14dd3be13c"
+    },
+    {
+      "path": "checks/orbit-audit.json",
+      "size_bytes": 523,
+      "sha256": "18b7df052a0eb5878de244f2dcfc9df16415f8b878b4402adac9155d7054fbdc"
+    },
+    {
+      "path": "checks/orbit-compile.log",
+      "size_bytes": 293,
+      "sha256": "13a00a5c2c53c17dd07da4c5671110c74c699fd1cd6ed5f8347b4b8de7a069f7"
+    },
+    {
+      "path": "checks/regeneration.json",
+      "size_bytes": 878,
+      "sha256": "b13fc08de818632e3188f515962db3d1c5ac68cbdeb34904cf74fba936f7d838"
+    },
+    {
+      "path": "checks/replay-summary.json",
+      "size_bytes": 3835,
+      "sha256": "18d142b8e3a1a3d479e0ce63c54b15367cbc4cec3d9011197fd0c0e96ce5e6f1"
+    },
+    {
+      "path": "checks/run_orbit_audit.py",
+      "size_bytes": 2978,
+      "sha256": "51e566d8d2cafaa960dd9cad5ff3cc7b5dbc4aa38f73ebe1825e64608a76ea65"
+    },
+    {
+      "path": "checks/source_environment_lint.py",
+      "size_bytes": 6283,
+      "sha256": "9a0f8ef504a0674e7c4f1b83136655eb390775a495a2de6f97d3ef61a509b8e7"
+    },
+    {
+      "path": "checks/transport-normal.json",
+      "size_bytes": 990,
+      "sha256": "0b805a3327c0bfeacc9e64f53ded4a328e48aac2fe672cbea77208ade0b01154"
+    },
+    {
+      "path": "checks/transport-optimized.json",
+      "size_bytes": 990,
+      "sha256": "0f635673b010b43c7e628b68d4b634c916f7434cc7104060ec23ed6bb47fe4f5"
+    },
+    {
+      "path": "checks/verification-normal.json",
+      "size_bytes": 3660,
+      "sha256": "7d068ba13602990cad545c8b7ae57d70a31c8c09f9c424fc26bb0bd8d55a3c5d"
+    },
+    {
+      "path": "checks/verification-optimized.json",
+      "size_bytes": 3660,
+      "sha256": "8670f66792ddf4a2d17d32c09e5ddf2d36e833ddc6e62131f8dd5a60799900b1"
+    },
+    {
+      "path": "code/build_full_cube_catalogue.py",
+      "size_bytes": 7142,
+      "sha256": "22e750fe7502f425a0c800bb9084d5446e9df1ba121ffb7b7956f3cf8da44558"
+    },
+    {
+      "path": "code/exhaustive-cross-polytope-six.py",
+      "size_bytes": 18724,
+      "sha256": "9a1a3481e8f0fe8ee475ec76b8f26cb8cf03a0eb0d33275fbb97b99143148626"
+    },
+    {
+      "path": "code/regenerate_inputs.py",
+      "size_bytes": 3066,
+      "sha256": "0ac5dd8139627a233c606acc8a5be1413648c506be80649c0717c4bd8d4c7abf"
+    },
+    {
+      "path": "code/verification_core.py",
+      "size_bytes": 18260,
+      "sha256": "f13d91542b465833eaca9186a4b4b999da1ceb49918cf6bd341acd09bd7e1123"
+    },
+    {
+      "path": "code/verify-cross-polytope-six-original.py",
+      "size_bytes": 14622,
+      "sha256": "15431091e6f88adda304193fbc543d5174e7c8abcfa3e780c3b3fd4191c0f512"
+    },
+    {
+      "path": "code/verify-genbg-orbits.cpp",
+      "size_bytes": 6428,
+      "sha256": "d7f06eee42f6aa46f53780e2685e9042462b368e84889c6aee8488e413255c1d"
+    },
+    {
+      "path": "code/verify_supplied.py",
+      "size_bytes": 21025,
+      "sha256": "64947c7b4d9cb0cbad157f42f5f78e09d3fde19b2573319ccc43ba7fe31244f4"
+    },
+    {
+      "path": "code/verify_transport_simulators.py",
+      "size_bytes": 9625,
+      "sha256": "78a2a09640ea2b85d6a41080259625bcf86abbd03fc3fa8d183743093aaedd8f"
+    },
+    {
+      "path": "data/MANIFEST.sha256",
+      "size_bytes": 80,
+      "sha256": "e76b81c07b982c130eb493623d1e09bf039df73b9a48797a72f3e94ce047afd9"
+    },
+    {
+      "path": "data/ORIGINAL_ATTRIBUTION.json",
+      "size_bytes": 1406,
+      "sha256": "6cebac0fc826b1c02856e4ddecba56dc5be2632973b39c9155c914537186525a"
+    },
+    {
+      "path": "data/ORIGINAL_INPUTS.sha256",
+      "size_bytes": 238,
+      "sha256": "ca13072813bb08a949b1b380a45a964c9dfe9f51126bdbcc225ae8ca0453dd69"
+    },
+    {
+      "path": "data/full-signed-cube-catalogue.json",
+      "size_bytes": 204018,
+      "sha256": "5fe2c2c860dbd1b55b89f63caf845423b2cfa89bbec8d3585f6d78ff20321ed7"
+    },
+    {
+      "path": "data/genbg-6-5.g6",
+      "size_bytes": 171636,
+      "sha256": "577bdda1746350f0644b793d2a1cd8d416f2f16c3a10a0180aaf6b812783c0a3"
+    },
+    {
+      "path": "data/genbg-6-6.g6",
+      "size_bytes": 1544751,
+      "sha256": "32a669ac020071965b16e55f299bfb50cbf58fa1c2d360e3dd2242589044f43c"
+    },
+    {
+      "path": "data/manifest.json",
+      "size_bytes": 217299,
+      "sha256": "bee562da971e9bd8c25513407438158dadd3a88d423dee21ffc3674528e55036"
+    },
+    {
+      "path": "paper.md",
+      "size_bytes": 21631,
+      "sha256": "0b7aa76e77067cd190e77fc697394d65bca4a1c9118aecaed0c26d1ade537966"
+    },
+    {
+      "path": "paper.pdf",
+      "size_bytes": 298173,
+      "sha256": "80261b96117c458035bb7dde2c1675fadff312f32a1348a0ad89fc62168de158"
+    },
+    {
+      "path": "paper.tex",
+      "size_bytes": 22502,
+      "sha256": "0b8501a059415dca82e2b210ddf92816fffdaf2c09f1f9eabb0c8584987add93"
+    },
+    {
+      "path": "publication/qa.json",
+      "size_bytes": 1336,
+      "sha256": "0d1b821527675df7ae5ae5a92a687c125d5cccaafd49370ff70bdd9beb31e7c3"
+    }
+  ]
+}

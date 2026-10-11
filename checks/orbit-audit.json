@@ -1,0 +1,18 @@
+{
+  "schema": "cross-polytope-six-orbit-audit-v1",
+  "coordinate_permutations": 720,
+  "right_size_5": {
+    "records": 14303,
+    "distinct_canonical_keys": 14303,
+    "orbit_size_sum": 6054006,
+    "expected_labelled_supports": 6054006
+  },
+  "right_size_6": {
+    "records": 118827,
+    "distinct_canonical_keys": 118827,
+    "orbit_size_sum": 63602770,
+    "expected_labelled_supports": 63602770
+  },
+  "result": "all_orbits_unique_and_complete",
+  "count_formula": "sum_{j=0}^6 (-1)^j binom(6,j) binom(2^(6-j)-1,k)"
+}

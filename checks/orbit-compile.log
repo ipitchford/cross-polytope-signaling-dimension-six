@@ -1,0 +1,9 @@
+command: c++ -std=c++17 -O2 code/verify-genbg-orbits.cpp -o checks/verify-genbg-orbits
+compiler: Apple clang version 21.0.0 (clang-2100.3.34.2)
+exit: 0
+stderr: empty
+
+command: checks/verify-genbg-orbits data/genbg-6-5.g6 data/genbg-6-6.g6
+exit: 0
+stderr: empty
+stdout: checks/orbit-audit.json

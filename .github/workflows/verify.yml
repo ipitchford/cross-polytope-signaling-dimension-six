@@ -1,0 +1,110 @@
+name: Exact public replay
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: exact-public-replay-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONNOUSERSITE: "1"
+    steps:
+      - name: Check out candidate bytes
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Select Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Prepare external replay directory
+        run: mkdir -p "$RUNNER_TEMP/cross-polytope-replay"
+
+      - name: Lint gate sources and environment boundary
+        env:
+          PYTHONOPTIMIZE: "0"
+        run: >-
+          python3 -B checks/source_environment_lint.py
+          --root .
+          --output "$RUNNER_TEMP/cross-polytope-replay/source-environment.json"
+
+      - name: Rebuild the 49-class catalogue outside the checkout
+        env:
+          PYTHONOPTIMIZE: "0"
+        run: |
+          python3 -B code/build_full_cube_catalogue.py \
+            --data-dir data \
+            --output "$RUNNER_TEMP/cross-polytope-replay/full-signed-cube-catalogue.json"
+          cmp data/full-signed-cube-catalogue.json \
+            "$RUNNER_TEMP/cross-polytope-replay/full-signed-cube-catalogue.json"
+
+      - name: Exact supplied-input replay (normal)
+        env:
+          PYTHONOPTIMIZE: "0"
+        run: >-
+          python3 -B code/verify_supplied.py
+          --output "$RUNNER_TEMP/cross-polytope-replay/verification-normal.json"
+
+      - name: Exact supplied-input replay (optimized)
+        env:
+          PYTHONOPTIMIZE: "1"
+        run: >-
+          python3 -B code/verify_supplied.py
+          --output "$RUNNER_TEMP/cross-polytope-replay/verification-optimized.json"
+
+      - name: Exact common-distribution replay (normal)
+        env:
+          PYTHONOPTIMIZE: "0"
+        run: >-
+          python3 -B code/verify_transport_simulators.py
+          --output "$RUNNER_TEMP/cross-polytope-replay/transport-normal.json"
+
+      - name: Exact common-distribution replay (optimized)
+        env:
+          PYTHONOPTIMIZE: "1"
+        run: >-
+          python3 -B code/verify_transport_simulators.py
+          --output "$RUNNER_TEMP/cross-polytope-replay/transport-optimized.json"
+
+      - name: Compile and run independent orbit audit
+        run: |
+          c++ -std=c++17 -O2 code/verify-genbg-orbits.cpp \
+            -o "$RUNNER_TEMP/cross-polytope-replay/verify-genbg-orbits"
+          "$RUNNER_TEMP/cross-polytope-replay/verify-genbg-orbits" \
+            data/genbg-6-5.g6 data/genbg-6-6.g6 \
+            > "$RUNNER_TEMP/cross-polytope-replay/orbit-audit.json"
+
+      - name: Gate exact, optimized, transport, and orbit results
+        env:
+          PYTHONOPTIMIZE: "0"
+        run: >-
+          python3 -B checks/check_replay_gate.py
+          --verification-normal "$RUNNER_TEMP/cross-polytope-replay/verification-normal.json"
+          --verification-optimized "$RUNNER_TEMP/cross-polytope-replay/verification-optimized.json"
+          --transport-normal "$RUNNER_TEMP/cross-polytope-replay/transport-normal.json"
+          --transport-optimized "$RUNNER_TEMP/cross-polytope-replay/transport-optimized.json"
+          --orbit "$RUNNER_TEMP/cross-polytope-replay/orbit-audit.json"
+          --output "$RUNNER_TEMP/cross-polytope-replay/replay-gate.json"
+
+      - name: Verify exact committed package closure
+        env:
+          PYTHONOPTIMIZE: "0"
+        run: |
+          mkdir -p "$RUNNER_TEMP/cross-polytope-package"
+          git archive --format=tar HEAD | tar -xf - -C "$RUNNER_TEMP/cross-polytope-package"
+          python3 -B checks/check_manifest.py \
+            --root "$RUNNER_TEMP/cross-polytope-package" \
+            --output "$RUNNER_TEMP/cross-polytope-replay/manifest.json"

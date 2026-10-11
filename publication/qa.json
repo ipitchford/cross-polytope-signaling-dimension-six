@@ -1,0 +1,9 @@
+{
+  "pdfSha256": "80261b96117c458035bb7dde2c1675fadff312f32a1348a0ad89fc62168de158",
+  "pages": 7,
+  "text": "pdf_tex_preflight passed with zero raw TeX findings. Final TinyTeX compilation has no overfull boxes or undefined references. Built-in desktop compilation also succeeded.",
+  "visual": "All seven rendered pages inspected. Page 1: centred title, Anonymous attribution and readable abstract. Pages 2-3: definitions, theorem and reductions contained within margins. Page 4: enumeration table fits and counts distinguish rooted from full classes. Page 5: worked certificate, proof and limitations readable. Pages 6-7: declarations and references readable; two initial bibliography overflows repaired and both affected pages rendered and inspected again.",
+  "accessibleManuscript": "paper.md regenerated from final DOI-bearing paper.tex using Pandoc; mathematical source remains authoritative.",
+  "doiRevisionQa": "Reserved DOI 10.5281/zenodo.23296390 and repository URL inserted in availability. Affected pages 6-7 re-rendered and inspected: links and references fit, no clipping. Seven pages retained; final text preflight passes with zero findings.",
+  "scope": "Presentation and text QA only, not mathematical correctness, novelty or independent peer review. Refresh hash and inspect affected pages after any PDF rebuild."
+}
